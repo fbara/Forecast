@@ -42,18 +42,30 @@ class API {
             }
         }.resume()
     }
-}
-
-extension URL {
-    func withQueries(_ queries: [String: String]) -> URL? {
-        guard var component = URLComponents(url: self, resolvingAgainstBaseURL: true) else {
-            fatalError()
+    
+    class func weeklyWeather(_ city: String, onSuccess: @escaping (WeeklyWeather) -> Void) {
+        let query = ["q": "\(city)", "appid": appID, "units": "Imperial", "cnt": "5"]
+        guard baseURLForWeeklyWeather.withQueries(query) != nil else {
+            fatalError("Invalid URL for weekly weather")
         }
+        guard let url = baseURLForWeeklyWeather.withQueries(query) else { fatalError() }
         
-        component.queryItems = queries.map {
-            URLQueryItem(name: $0.key, value: $0.value)
-        }
-        
-        return component.url
+        URLSession.shared.dataTask(with: url) { data, res, err in
+            guard let data = data, err == nil else {
+                fatalError(err!.localizedDescription)
+            }
+            
+            do {
+                let weather = try decoder.decode(WeeklyWeather.self, from: data)
+                //run on the main thread, not background
+                DispatchQueue.main.async {
+                    onSuccess(weather)
+                }
+            } catch {
+                fatalError(error.localizedDescription)
+            }
+        }.resume()
     }
 }
+
+

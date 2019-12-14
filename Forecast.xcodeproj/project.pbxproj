@@ -15,6 +15,13 @@
 		AD4B176C23958E160051DB6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD4B176A23958E160051DB6A /* LaunchScreen.storyboard */; };
 		AD4B17742395901C0051DB6A /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B17732395901C0051DB6A /* Weather.swift */; };
 		AD4B17762395919B0051DB6A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B17752395919B0051DB6A /* API.swift */; };
+		AD4B1778239827880051DB6A /* CurrentWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B1777239827880051DB6A /* CurrentWeatherViewModel.swift */; };
+		AD4B177A239830DE0051DB6A /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B1779239830DE0051DB6A /* CurrentWeather.swift */; };
+		AD4B177C239C3CC00051DB6A /* WeeklyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B177B239C3CC00051DB6A /* WeeklyWeather.swift */; };
+		AD4B177E239C3F220051DB6A /* WeeklyWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B177D239C3F220051DB6A /* WeeklyWeatherViewModel.swift */; };
+		AD4B1780239C3FF30051DB6A /* WeeklyWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B177F239C3FF30051DB6A /* WeeklyWeatherView.swift */; };
+		AD4B1782239C41610051DB6A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B1781239C41610051DB6A /* CardView.swift */; };
+		AD4B17A5239D68DA0051DB6A /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B17A4239D68DA0051DB6A /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +35,13 @@
 		AD4B176D23958E160051DB6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD4B17732395901C0051DB6A /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		AD4B17752395919B0051DB6A /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		AD4B1777239827880051DB6A /* CurrentWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherViewModel.swift; sourceTree = "<group>"; };
+		AD4B1779239830DE0051DB6A /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		AD4B177B239C3CC00051DB6A /* WeeklyWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyWeather.swift; sourceTree = "<group>"; };
+		AD4B177D239C3F220051DB6A /* WeeklyWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyWeatherViewModel.swift; sourceTree = "<group>"; };
+		AD4B177F239C3FF30051DB6A /* WeeklyWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyWeatherView.swift; sourceTree = "<group>"; };
+		AD4B1781239C41610051DB6A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		AD4B17A4239D68DA0051DB6A /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +83,13 @@
 				AD4B176723958E160051DB6A /* Preview Content */,
 				AD4B17732395901C0051DB6A /* Weather.swift */,
 				AD4B17752395919B0051DB6A /* API.swift */,
+				AD4B1777239827880051DB6A /* CurrentWeatherViewModel.swift */,
+				AD4B1779239830DE0051DB6A /* CurrentWeather.swift */,
+				AD4B177B239C3CC00051DB6A /* WeeklyWeather.swift */,
+				AD4B177D239C3F220051DB6A /* WeeklyWeatherViewModel.swift */,
+				AD4B177F239C3FF30051DB6A /* WeeklyWeatherView.swift */,
+				AD4B1781239C41610051DB6A /* CardView.swift */,
+				AD4B17A4239D68DA0051DB6A /* Extension.swift */,
 			);
 			path = Forecast;
 			sourceTree = "<group>";
@@ -152,11 +173,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD4B1780239C3FF30051DB6A /* WeeklyWeatherView.swift in Sources */,
 				AD4B17742395901C0051DB6A /* Weather.swift in Sources */,
 				AD4B176023958E130051DB6A /* AppDelegate.swift in Sources */,
+				AD4B17A5239D68DA0051DB6A /* Extension.swift in Sources */,
 				AD4B176223958E130051DB6A /* SceneDelegate.swift in Sources */,
+				AD4B177E239C3F220051DB6A /* WeeklyWeatherViewModel.swift in Sources */,
+				AD4B177A239830DE0051DB6A /* CurrentWeather.swift in Sources */,
 				AD4B176423958E130051DB6A /* ContentView.swift in Sources */,
 				AD4B17762395919B0051DB6A /* API.swift in Sources */,
+				AD4B1778239827880051DB6A /* CurrentWeatherViewModel.swift in Sources */,
+				AD4B1782239C41610051DB6A /* CardView.swift in Sources */,
+				AD4B177C239C3CC00051DB6A /* WeeklyWeather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +256,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-Xfrontend -warn-long-expression-type-checking=100 -Xfrontend -warn-long-function-bodies=100";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -281,6 +310,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "-warn-long-expression-type-checking=100 -warn-long-function-bodies=100 -Xfrontend";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";

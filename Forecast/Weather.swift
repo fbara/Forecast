@@ -34,11 +34,14 @@ struct Main: Codable {
 }
 
 struct Clouds: Codable {
-    let all: String
+    let all: Double
 }
 
 struct Sys: Codable {
-    let id, type, sunrise, sunset: Int
+    let type: Int
+    let id: Int
     let country: String
+    let sunrise: Int
+    let sunset:  Int
 }
 
