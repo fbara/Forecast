@@ -20,15 +20,18 @@ struct CardView: View {
             HStack {
                 Text("\(list.temp.day.round)º")
                     .font(.title)
-                // TODO: put weather icon here
+                    .bold()
+                Image(list.weather.last?.icon ?? "01d")
+                    .resizable()
+                    .frame(width: 70, height: 70)
                 Text("\(list.temp.min.round)º")
-                .font(.title)
-                .foregroundColor(.white)
+                    .font(.system(size: 26, weight: .thin))
+                    .foregroundColor(.white)
             }
             
             Text(list.weather.last?.description ?? "Unknown")
-                .font(.system(size: 16))
-            .foregroundColor(.white)
+                .font(.body)
+                .foregroundColor(.white)
         }
     }
 }
